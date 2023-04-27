@@ -1,0 +1,72 @@
+{
+  "id": "feaf4ba2-05e5-43bf-8309-b6840f887546",
+  "version": "2.0",
+  "name": "D3-05",
+  "url": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+  "tests": [{
+    "id": "50bac53c-e0fa-439c-b189-e1a8377cf597",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "636f7f9a-7c1a-4f41-b552-e261d798b3a8",
+    "name": "EC-05",
+    "commands": [{
+      "id": "853e7796-563e-4b71-9ae9-13397d75af66",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06bef0b7-39b6-4139-a851-65f21abfb190",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.scroll(0,500)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "435566a2-4f4a-4f14-ad6a-ff48bce1f23e",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=input-amount",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "33824c4e-40a7-4342-ba76-44f0060da9e5",
+      "comment": "",
+      "command": "check",
+      "target": "name=agree",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3e952e7-5e1f-4dcb-8426-1a1a436b6228",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "name=agree",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9486f0e0-0ee7-4605-a65d-f4318159b5a2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-check-label:nth-child(1)",
+      "targets": [
+        ["css=.form-check-label:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='form-voucher']/div[8]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'I understand that gift certificates are non-refundable')]", "xpath:innerText"]
+      ],
+      "value": "I understand that gift certificates are non-refundable"
+    }]
+  }],
+  "suites": [{
+    "id": "653a57f8-b359-497d-bf3c-00050fc93e8b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["50bac53c-e0fa-439c-b189-e1a8377cf597"]
+  }],
+  "urls": ["https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb"],
+  "plugins": []
+}

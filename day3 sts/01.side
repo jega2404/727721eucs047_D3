@@ -1,0 +1,69 @@
+{
+  "id": "1336b4d3-7164-4a13-adb4-7b1f2f4987ac",
+  "version": "2.0",
+  "name": "01",
+  "url": "https://demo.opencart.com",
+  "tests": [{
+    "id": "67d5f055-6c85-417a-9bc7-3d4787a470b1",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "fb71accd-dd69-4e15-9e38-90a186bd092e",
+    "name": "p5",
+    "commands": [{
+      "id": "81f9ac08-dcc7-42e3-9a39-33e647374e85",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e99a8ae-a782-45c3-a4fd-d6ef6dc3b0e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a3407d1-d5fc-4c4d-a17c-3804956a9cdc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Desktops",
+      "targets": [
+        ["linkText=Desktops", "linkText"],
+        ["css=.show:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Desktops')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=20')]", "xpath:href"],
+        ["xpath=//nav/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Desktops')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1508c60a-c4d2-43bb-bb23-d0187c667dbb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mac (1)",
+      "targets": [
+        ["linkText=Mac (1)", "linkText"],
+        ["css=.show li:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Mac (1)')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=20_27')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mac (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cde4d3f8-b7b8-4816-8ac5-aeb0dc15c6ba",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["67d5f055-6c85-417a-9bc7-3d4787a470b1"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}
